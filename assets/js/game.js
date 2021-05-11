@@ -15,7 +15,7 @@ var fight = function () {
   window.alert("Welcome to Robot Gladiators!");
 
   var promptFight = window.prompt(
-    "Would you like to FIGHT or SKIP this battle? Enter 'FIGHT' or 'SKIP' to choose."
+    'Would you like to FIGHT or SKIP this battle? Enter 'FIGHT' or 'SKIP' to choose.'
   );
 
   // if player choses to fight, then fight
@@ -74,4 +74,11 @@ var fight = function () {
     else {
         fight();
     }
+    // if player did not choose 1 or 2 in prompt
+  } else if {
+      window.alert("You need to pick a valid option. Try again!");
   }
+};
+
+// run fight function to start game
+fight();
