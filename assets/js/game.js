@@ -84,6 +84,18 @@ var randomNumber = function(min, max) {
         // pick new enemy to fight based on the index of the enemyInfo array
         var pickedEnemyObj = enemyInfo[i];
   
+        var getPlayerName = function() {
+            var name = "";
+
+            // *******
+            // add loop here with prompt and condition
+            while (name === "" || name === null) {
+                name = prompt("What is your robot's name?");
+            }
+
+            console.log("Your robot's name is " + name);
+            return name;
+        };
         // set health for picked enemy
         pickedEnemyObj.health = randomNumber(40, 60);
   
@@ -171,7 +183,7 @@ var randomNumber = function(min, max) {
   
   // player information
   var playerInfo = {
-    name: window.prompt("What is your robot's name?"),
+    name: getPlayerName(),
     health: 100,
     attack: 10,
     money: 10,
